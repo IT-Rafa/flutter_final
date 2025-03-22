@@ -1,0 +1,31 @@
+- 1º Preparamos espacio para programar
+	- Creamos repositorio github
+		- Con archivos:
+			README.md
+			.gitignore (basado en flutter)
+			con LICENSE (basado en MIT)
+
+	- Clonamos en equipo
+	
+- 2º Creamos aplicación Flutter vacía
+	- Entramos en repositorio clonado en ordenador (carpeta anterior)
+	- Usamos aplicación Flutter para crear la aplicación dentro del 
+		repositorio (flutter_final):
+		flutter create flutter_final -e --org es.itrafa
+
+- 3º Añadimos paquetes a usar
+
+	- Gestión estados
+	hooks_riverpod - Para gestión
+
+	- Traducción
+	flutter_translate
+	flutter_localizations
+
+	- splash screen
+
+	- 
+	
+  flutter_localizations:
+    sdk: flutter
+  flutter_translate: ^4.1.0
