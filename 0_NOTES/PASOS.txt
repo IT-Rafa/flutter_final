@@ -32,3 +32,19 @@
   flutter_localizations:
     sdk: flutter
   flutter_translate: ^4.1.0
+
+
+	Splash screen 
+
+	Design for devices screen
+
+	Responsive: Se adaptan al estado del dispositivo. screen sizes, resolutions, and orientations
+
+	Adaptive: Se adaptan al espacio que tiene cada elemento según donde esté
+
+Nos adaptamos al espacio.
+Usamos MediaQuery para controlarlo
+	min: 360×640 -> max: desktop
+	
+	768
+	1023

@@ -16,6 +16,11 @@ class MainApp extends ConsumerWidget {
     return LocalizationProvider(
       state: LocalizationProvider.of(context).state,
       child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+
+        theme: ThemeData.light(), //light theme
+        darkTheme: ThemeData.dark(), //dark theme
+
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
@@ -24,9 +29,7 @@ class MainApp extends ConsumerWidget {
         ],
         supportedLocales: localizationDelegate.supportedLocales,
         locale: localizationDelegate.currentLocale,
-        debugShowCheckedModeBanner: false,
         onGenerateTitle: (context) => translate('app_bar.title'),
-        theme: ThemeData(primarySwatch: Colors.blue),
         routerConfig: goRouter,
       ),
     );

@@ -1,4 +1,4 @@
-import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
