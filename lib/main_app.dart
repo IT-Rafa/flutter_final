@@ -6,11 +6,13 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MainApp extends ConsumerWidget {
   const MainApp({super.key});
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Initialize localization delegate
     var localizationDelegate = LocalizedApp.of(context).delegate;
+    // Initialize the GoRouter provider
     final goRouter = ref.watch(goRouterProvider);
+    // Initialize the localization provider
     return LocalizationProvider(
       state: LocalizationProvider.of(context).state,
       child: MaterialApp.router(
@@ -22,7 +24,7 @@ class MainApp extends ConsumerWidget {
         ],
         supportedLocales: localizationDelegate.supportedLocales,
         locale: localizationDelegate.currentLocale,
-
+        debugShowCheckedModeBanner: false,
         onGenerateTitle: (context) => translate('app_bar.title'),
         theme: ThemeData(primarySwatch: Colors.blue),
         routerConfig: goRouter,

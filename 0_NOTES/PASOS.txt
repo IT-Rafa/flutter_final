@@ -22,9 +22,12 @@
 	flutter_translate
 	flutter_localizations
 
+	- Navegación basada en un API basado en rutas tipo url
+	goRouter
+
+
 	- splash screen
 
-	- 
 	
   flutter_localizations:
     sdk: flutter

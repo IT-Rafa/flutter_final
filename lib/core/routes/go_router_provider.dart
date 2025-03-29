@@ -5,6 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 final goRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/loginAllScreen',
+    debugLogDiagnostics: true,
     routes: [
       GoRoute(
         name: "login",
