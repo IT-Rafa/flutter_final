@@ -15,7 +15,7 @@ class _LoginAllScreenTabletState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(translate('app_bar.title'))),
+      appBar: AppBar(title: Text("Tablet Landscape")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

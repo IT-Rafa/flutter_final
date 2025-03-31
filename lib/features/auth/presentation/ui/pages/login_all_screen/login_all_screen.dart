@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/Login_all_screen_tablet_portrait.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_desktop.dart';
 import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_mobile_landscape.dart';
 import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_mobile_portrait.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_tablet_landscape.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class LoginAllScreen extends ConsumerStatefulWidget {
@@ -16,8 +18,9 @@ class _LoginAllScreenState extends ConsumerState<LoginAllScreen> {
   Widget build(BuildContext context) {
     // Get screen size
     final screenSize = MediaQuery.sizeOf(context);
-    // mobile layout
+
     if (screenSize.width < 640) {
+      // mobile layout
       if (screenSize.height >= screenSize.width) {
         // Portrait layout
         return const LoginAllScreenMobilePortrait();
@@ -25,11 +28,18 @@ class _LoginAllScreenState extends ConsumerState<LoginAllScreen> {
         // Landscape layout
         return const LoginAllScreenMobileLandscape();
       }
-    } else if (screenSize.width < 767) {
-      return const LoginAllScreenTabletPortrait();
+    } else if (screenSize.width < 800) {
+      // tablet layout
+      if (screenSize.height >= screenSize.width) {
+        // Portrait layout
+        return const LoginAllScreenTabletPortrait();
+      } else {
+        // Landscape layout
+        return const LoginAllScreenTabletLandscape();
+      }
     } else {
-      // Narrow screen layout
-      return const NarrowScreenLayout();
+      // desktop layout
+      return const LoginAllScreenDesktop();
     }
   }
 }

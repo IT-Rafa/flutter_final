@@ -15,7 +15,7 @@ class _LoginAllScreenMobilePortraitState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(translate('app_bar.title'))),
+      appBar: AppBar(title: Text("Mobile Portrait")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
