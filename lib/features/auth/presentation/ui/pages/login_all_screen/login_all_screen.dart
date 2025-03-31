@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_translate/flutter_translate.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/Login_all_screen_tablet_portrait.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_mobile_landscape.dart';
+import 'package:flutter_final/features/auth/presentation/ui/pages/login_all_screen/login_all_screen_mobile_portrait.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class LoginAllScreen extends ConsumerStatefulWidget {
@@ -14,10 +16,17 @@ class _LoginAllScreenState extends ConsumerState<LoginAllScreen> {
   Widget build(BuildContext context) {
     // Get screen size
     final screenSize = MediaQuery.sizeOf(context);
-
-    if (screenSize.width > 600) {
-      // Wide screen layout
-      return const WideScreenLayout();
+    // mobile layout
+    if (screenSize.width < 640) {
+      if (screenSize.height >= screenSize.width) {
+        // Portrait layout
+        return const LoginAllScreenMobilePortrait();
+      } else {
+        // Landscape layout
+        return const LoginAllScreenMobileLandscape();
+      }
+    } else if (screenSize.width < 767) {
+      return const LoginAllScreenTabletPortrait();
     } else {
       // Narrow screen layout
       return const NarrowScreenLayout();

@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class LoginAllScreen extends ConsumerStatefulWidget {
-  const LoginAllScreen({super.key});
+class LoginAllScreenMobileLandscape extends ConsumerStatefulWidget {
+  const LoginAllScreenMobileLandscape({super.key});
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _LoginAllScreenState();
+  ConsumerState<ConsumerStatefulWidget> createState() =>
+      LoginAllScreenMobileLandscapeState();
 }
 
-class _LoginAllScreenState extends ConsumerState<LoginAllScreen> {
+class LoginAllScreenMobileLandscapeState
+    extends ConsumerState<LoginAllScreenMobileLandscape> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

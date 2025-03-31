@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class LoginAllScreenMobilePortrait extends ConsumerStatefulWidget {
-  const LoginAllScreenMobilePortrait({super.key});
+class LoginAllScreenTabletPortrait extends ConsumerStatefulWidget {
+  const LoginAllScreenTabletPortrait({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
-      _LoginAllScreenMobilePortraitState();
+      LoginAllScreenTabletPortraitState();
 }
 
-class _LoginAllScreenMobilePortraitState
-    extends ConsumerState<LoginAllScreenMobilePortrait> {
+class LoginAllScreenTabletPortraitState
+    extends ConsumerState<LoginAllScreenTabletPortrait> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
