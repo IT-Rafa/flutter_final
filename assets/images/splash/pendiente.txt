@@ -1,0 +1,12 @@
+Falta añadir:
+
+principal
+	assets/images/splash/splash.png'
+	assets/images/splash/background_image.png
+
+image_dark_android
+	assets/images/splash/splash_dark.png
+
+android_12_and_above
+	assets/splash_12.png'
+	assets/images/splash/branding_image.png'
