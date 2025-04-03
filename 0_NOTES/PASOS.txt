@@ -26,7 +26,11 @@
 	goRouter
 
 
-	- splash screen
+	- página splash
+	splash_master
+
+	- Permitir usar svg
+	flutter_svg: ^2.0.17
 
 	
   flutter_localizations:
