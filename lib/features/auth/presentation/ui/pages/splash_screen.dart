@@ -14,7 +14,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   void initState() {
     super.initState();
     // Simulate a delay for the splash screen
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 4), () {
       // Check if the widget is still mounted before navigating
       if (mounted) {
         // Navigate to the login screen after the delay
